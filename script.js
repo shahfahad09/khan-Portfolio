@@ -25,6 +25,21 @@ downloadButtons.forEach(button => {
 
 
 
+//hire buttom function 
+
+function openEmail() {
+    // आपके email address को यहाँ पर define करें
+    const receiverEmail = 'khannishu522@gmail.com';
+    const subject = 'Hiring Inquiry'; // Optional subject
+    const body = 'Hello, I am interested in your services.'; // Optional body text
+
+    // `mailto` link generate करना
+    window.location.href = `mailto:${receiverEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+}
+
+
+
+
 
 
 
