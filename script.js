@@ -4,6 +4,30 @@ function myMenuFunction() {
     menuBtn.classList.toggle("responsive");
 }
 
+// "Download CV" 
+const downloadButtons = document.querySelectorAll(".btn");
+
+// Function resume downloded 
+function downloadResume() {
+    const filePath = 'resume.pdf'; // Resume file path
+    const a = document.createElement('a');
+    a.href = filePath;
+    a.download = 'Shahfhahd_khan_resume.pdf'; // Downloaded file ka naam
+    a.click();
+}
+
+// Sabhi buttons par click event listener add kar rahe hain
+downloadButtons.forEach(button => {
+    if (button.textContent.includes("Download CV")) {
+        button.addEventListener("click", downloadResume);
+    }
+});
+
+
+
+
+
+
 // Add shadow to the header on scroll
 window.onscroll = function() {
     const navHeader = document.getElementById("header");
