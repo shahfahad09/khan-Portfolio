@@ -9,7 +9,7 @@ const downloadButtons = document.querySelectorAll(".btn");
 
 // Function resume downloded 
 function downloadResume() {
-    const filePath = 'resume.pdf'; // Resume file path
+    const filePath = 'shahfahad.pdf'; // Resume file path
     const a = document.createElement('a');
     a.href = filePath;
     a.download = 'Shahfhahd_khan_resume.pdf'; // Downloaded file ka naam
