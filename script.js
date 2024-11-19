@@ -72,7 +72,7 @@ document.querySelectorAll('.nav-menu a').forEach(link => {
 
 // Initialize typing effect
 new Typed(".typedText", {
-    strings: ["Student","Become Full Stack Developer "],
+    strings: ["Student","Become  ML Engineer "],
     loop: true,
     typeSpeed: 100,
     backSpeed: 80,
