@@ -482,7 +482,7 @@ h3{
 .proj-heading h1 {
     font-size: 2.5em;
     font-weight: 600;
-    color: #333;
+    color: #363636;
     margin-bottom: 1em;
 }
 
@@ -500,9 +500,9 @@ h3{
     position: relative;
     width: 300px; /* Width for the project box */
     height: 300px; /* Height for the project box */
-    background: rgba(149, 176, 240, 0.902);;
+    background: rgba(86, 107, 243, 0.605);;
     border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px;
+    box-shadow: rgba(13, 13, 13, 0.1) 0px 4px 8px;
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
     display: flex;
@@ -520,7 +520,7 @@ h3{
     transform: translateX(-50%);
     width: 60px;
     height: 60px;
-    background: #00B5E7; /* Circle color */
+    background: #1b4cbe; /* Circle color */
     border-radius: 50%;
     transition: background 0.3s;
 }
@@ -534,19 +534,19 @@ h3{
 .proj-details h2 {
     font-size: 1.5em;
     font-weight: bold; /* Bold project name */
-    color: #007BFF; /* Project name color */
+    color: #050606b2; /* Project name color */
     margin: 0.5em 0;
 }
 
 .proj-details p {
-    color: #777;
+    color: #756868;
     font-size: 1em;
     margin: 0.5em 0;
 }
 
 /* Button Styling */
 button {
-    background: #0e86e2;
+    background: #3b73e3b9;
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
@@ -561,11 +561,11 @@ button a {
 /* Hover Effects */
 .proj-item:hover {
     transform: translateY(-5px);
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 20px;
+    box-shadow: rgb(40, 91, 212) 0px 10px 20px;
 }
 
 .proj-item:hover::after {
-    background: #1a8a76;
+    background: rgba(40, 152, 212, 0.955);
 }
 
 /* Responsive Styling */
@@ -584,20 +584,50 @@ button a {
 
 
 /* ----- CONTACT BOX ----- */
-.contact-info{
+/* .contact-info{
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding: 20px 30px;
+    align-items: right;
+    padding: 20px 50px;
     width: 100%;
     height: 315px;
     background: var(--second-color);
     border-radius: 10px;
     box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
     overflow: hidden;
+    
+} */
+.row {
+    display: flex;
+    justify-content: center; /* Box ko right side le jaane ke liye */
+    width: 130%;
+    margin-right: 50px;
+    margin-left: -150px;
+    
 }
+
+.contact-info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    padding: 20px 70px; /* Andar ka padding badhane ke liye */
+    width: 100%; /* Width ko badaane ke liye */
+    max-width: 800px; /* Max width set karne ke liye */
+    height: 300px; /* Height ko lamba karne ke liye */
+    background: rgb(110, 87, 224);
+    border-radius: 10px;
+    box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
+    overflow: hidden;
+}
+
+
+
+
+
 .contact-info>h2{
     color: var(--color-white);
     margin-bottom: 20px;
@@ -612,22 +642,34 @@ button a {
 .contact-info p>i{
     font-size: 18px;
 }
-.contact-info::after{
+.contact-info:hover {
+    background: rgba(40, 92, 212, 0.933); /* Hover karne par background color red ho jayega */
+    transition: background 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+.contact-info:hover h2,
+.contact-info:hover p,
+.contact-info:hover i {
+    color: #1f1e1e; /* Text color change */
+    z-index: 2;
+}
+
+/* .contact-info::after{
     background: var(--color-white);
 }
 .contact-info:hover.contact-info h2,
 .contact-info:hover.contact-info p,
 .contact-info:hover.contact-info i{
-    color: #777;
+    color: #1f1e1e;
     z-index: 2;
-}
+} */
 
 /* ----- CONTACT FORM ----- */
 .form-control{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 100%;
+    width: 150%;
 }
 .form-inputs{
     display: flex;
@@ -810,3 +852,21 @@ footer{
         width: 100%;
     }
 }
+
+
+
+
+
+/* phone number open in direct dial paid*/
+
+
+
+
+
+
+
+
+
+
+
+
